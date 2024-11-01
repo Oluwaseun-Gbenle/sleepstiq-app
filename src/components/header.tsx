@@ -1,12 +1,23 @@
 "use client";
 import Image from "next/image"
 import { usePathname, useRouter } from "next/navigation";
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+      const handleScroll = () => {
+          setIsScrolled(window.scrollY > 50); 
+      };
+
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -24,7 +35,9 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-transparent flex mx-10 lg:mx-0 flex-row-reverse justify-between lg:justify-normal lg:flex-row py-5">
+    <div className={`fixed top-0 left-0 right-0 z-50 bg-transparent flex mx-10 lg:mx-0 flex-row-reverse justify-between lg:justify-normal lg:flex-row pt-5
+    transition-all duration-300 ${isScrolled && "backdrop-blur-md" }`}
+>
       <div className="lg:mx-36">
         <Image
           src={"/images/logo.png"}
