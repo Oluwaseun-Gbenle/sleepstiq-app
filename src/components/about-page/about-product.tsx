@@ -80,7 +80,7 @@ const AboutProduct: FC<RouterProps> = ({ router }) => {
                 </div>
             </div>
             <hr className="border-[#21384218] me-36 relative mt-16 border-5 " />
-            <div className="px-6 sm:ps-16 lg:ps-36 py-24 custom-slider">
+            <div className="px-6 sm:ps-16 lg:ps-36 pt-24 -mb-16 custom-slider">
                 <Slider  {...settings}>
                     {customerReviewsTwo.map((customerReview, index) => (
                         <div key={index} className="bg-[#FBF9F2] text-[#4D533C] p-8 h-[200px]">
