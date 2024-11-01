@@ -32,3 +32,9 @@ margin-right: 10px;
   border-radius: 8px;
   }
 
+  .number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+  opacity: 1;
+  display: inline-block;
+}
+

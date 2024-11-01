@@ -1,7 +1,7 @@
 "use client";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Headers from "@/components/headers";
+import Header from "@/components/header";
 import { useRouter } from "next/navigation";
 import HeroSection from '@/components/home-page/hero-section';
 import HomeStories from '@/components/home-page/home-stories';
@@ -17,14 +17,14 @@ export default function Home() {
 
   return (
     <>
-      <Headers />
-      <HeroSection router={router}/>
-      <HomeStories router={router}/>
-      <ShopNow router={router}/>
-      <Mission/>
-      <VisitShop router={router}/>
+      <Header />
+      <HeroSection router={router} />
+      <HomeStories router={router} />
+      <ShopNow router={router} />
+      <Mission />
+      <VisitShop router={router} />
       <ProductReview />
-      <Footer router={router} />
+      <Footer />
     </>
   );
 }

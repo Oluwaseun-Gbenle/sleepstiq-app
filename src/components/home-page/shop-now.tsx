@@ -21,10 +21,11 @@ const ShopNow: FC<RouterProps> = ({ router }) => {
                     Visit Shop
                 </button>
             </div>
-            <div className="absolute  w-[30%] left-[22%] right-20 bottom-0 rounded-md bg-white p-8 text-[#4D533C] italic leading-6" style={{ boxShadow:" 0px 50px 100px 0px rgba(0, 0, 0, 0.15)"}}>😊  Promotes calm and relaxation.
-                💤  Inhalation allows for a rapid effect.
-                ✅  100% drug-free, plant-based ingredients.
-                ‍⚕️  3rd-party lab tested.
+            <div className="absolute  w-[30%] left-[22%] right-20 bottom-0 rounded-md bg-white p-7 text-[#4D533C] italic leading-6" style={{ boxShadow:" 0px 50px 100px 0px rgba(0, 0, 0, 0.15)"}}>
+                😊  Promotes calm and relaxation. <br />
+                💤  Inhalation allows for a rapid effect. <br />
+                ✅  100% drug-free, plant-based ingredients. <br />
+                &nbsp;&nbsp;&nbsp;&nbsp; 3rd-party lab tested. <br />
             </div>
         </section>
     )

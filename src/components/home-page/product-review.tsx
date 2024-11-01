@@ -29,7 +29,7 @@ const ProductReview = () => {
         containerClassName: "w-full max-w-full overflow-hidden",
     };
     return (
-        <div>
+        <div className="relative">
             <div className="text-[36px] font-bold text-[#4D533C] mb-8 ps-36">Product Reviews</div>
             <div className="ps-36 pb-16 product-custom-slider">
                 <Slider  {...settings}>
