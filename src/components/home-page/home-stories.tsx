@@ -51,7 +51,7 @@ const HomeStories:FC<RouterProps> = ({router}) => {
     <section>
     <div className="bg-white px-6 sm:px-16 lg:px-36 pt-48 pb-40">
       <div className="lg:flex justify-between">
-        <div className="lg:w-1/2 text-center lg:text-start">
+        <div className="lg:w-1/2 text-center lg:text-start slide-in-left">
           <div className="text-[#12305B]">
             <div className="text-sm">Our Amazing Story</div>
             <div className="font-bold text-[36px] pt-7 pb-12">
@@ -77,7 +77,7 @@ const HomeStories:FC<RouterProps> = ({router}) => {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 flex justify-center mt-12 lg:mt-0">
+        <div className="lg:w-1/2 flex justify-center mt-12 lg:mt-0 slide-in-right">
           <div className="bg-[#FBF9F2] w-[85%] px-10 py-14" style={{
             boxShadow: "0px 100px 100px 0px rgba(0, 0, 0, 0.15)"
           }}>
