@@ -4,7 +4,7 @@ import React, { FC } from "react"
 const VisitShop: FC<RouterProps> = ({ router }) => {
     return (
         <>
-        <div className="px-36 pb-36 text-center">
+        <div className="px-6 sm:p-16 lg:px-36 w-[90%] mx-auto text-center">
             <div className="font-bold text-[36px] text-[#12305B]">Visit Our Shop</div>
             <div className="text-[#21384299] pt-8 w-[90%]">Our Personal Diffuser is an aromatherapy device that contains a blend of melatonin, lavender, and chamomile. A few breaths of our plant-based essential oil mist will mellow you out, quiet the mind, and lull you to bed.
             </div>

@@ -21,7 +21,7 @@ const Footer = () => {
                 />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2  lg:flex gap-12 lg:gap-8 mt-12 text-white w-full z-10">
-                <div>
+                <div className="text-center sm:text-start">
                     <div className="mb-8 font-semibold">COMPANY</div>
                     <div className="space-y-4 flex flex-col text-[#ABABAB]">
                         <a href="/about">About</a>
@@ -30,7 +30,7 @@ const Footer = () => {
                         <a href="/jobs">Jobs</a>
                     </div>
                 </div>
-                <div>
+                <div className="text-center sm:text-start">
                     <div className="mb-8 font-semibold">CONTACT</div>
                     <div className="space-y-4 flex flex-col">
                         <div className="text-[#ABABAB]">Phone</div>
@@ -41,18 +41,18 @@ const Footer = () => {
                 </div>
 
                 <div className=" lg:w-[40%] mx-auto flex gap-6">
-                    <div>
+                <div className="text-center sm:text-start">
                         <div className="mb-8 font-semibold">CONSUMER ADVISORY</div>
                         <div className="">These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. This product should be used only as directed on the label. All trademarks and copyrights are property of their respective owners and not affiliated with nor do they endorse this product. Results may vary.
                             <br /> <br />By using our website or product, you agree to follow our <br /> <a className="text-[#8FE2FF] cursor-pointer">terms of service.</a></div>
                     </div>
                     <div className="h-[210px] border-l border-[#5D6544] hidden md:block"></div>
                 </div>
-                <div>
+                <div className="text-center sm:text-start">
                     <div className="font-semibold ">GET IN TOUCH</div>
                     <div className="text-[#ABABAB] my-8">Feel free to get in touch with us vai email</div>
                     <div className="font-bold text-xl sm:text-2xl">hello@sleepstiq.com</div>
-                    <div className="flex gap-x-4 mt-6">
+                    <div className="flex gap-x-4 mt-6 justify-center sm:justify-start">
                         {logos.map((logo, index) => (
                             < Image
                                 key={index}

@@ -49,9 +49,9 @@ const HomeStories:FC<RouterProps> = ({router}) => {
 
   return (
     <section>
-    <div className="bg-white px-36 pt-48 pb-40">
-      <div className="flex justify-between">
-        <div className="w-1/2">
+    <div className="bg-white px-6 sm:px-16 lg:px-36 pt-48 pb-40">
+      <div className="lg:flex justify-between">
+        <div className="lg:w-1/2 text-center lg:text-start">
           <div className="text-[#12305B]">
             <div className="text-sm">Our Amazing Story</div>
             <div className="font-bold text-[36px] pt-7 pb-12">
@@ -60,9 +60,9 @@ const HomeStories:FC<RouterProps> = ({router}) => {
                 <span className="relative -top-1">y Customers</span>
               </span>
             </div>
-            <div className="text-[#21384299] w-[80%]">There&apos;s no secret sauce, no wizard behind the curtain. What makes Aerolab tick is an interdisciplinary team with a framework that fosters candid collaboration.</div>
-            <div onClick={() => { router.push("/about") }} className="font-bold pt-6 w-fit">
-              <div className="flex items-center">
+            <div className="text-[#21384299] lg:w-[80%]">There&apos;s no secret sauce, no wizard behind the curtain. What makes Aerolab tick is an interdisciplinary team with a framework that fosters candid collaboration.</div>
+            <div onClick={() => { router.push("/about") }} className="font-bold pt-6 lg:w-fit">
+              <div className="flex items-center justify-center lg:justify-normal">
                 <Image
                   src={"/svg/arrowleft.svg"}
                   alt="arrowleft"
@@ -77,7 +77,7 @@ const HomeStories:FC<RouterProps> = ({router}) => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 flex justify-center">
+        <div className="lg:w-1/2 flex justify-center mt-12 lg:mt-0">
           <div className="bg-[#FBF9F2] w-[85%] px-10 py-14" style={{
             boxShadow: "0px 100px 100px 0px rgba(0, 0, 0, 0.15)"
           }}>
@@ -105,7 +105,7 @@ const HomeStories:FC<RouterProps> = ({router}) => {
         </div>
       </div>
     </div>
-    <div className="ps-36 pb-16 custom-slider ">
+    <div className="px-6 sm:ps-16 lg:ps-36 pb-16 custom-slider ">
     <Slider  {...settings2}>
     {customerReviewsTwo.map((customerReview, index) => (
       <div  key={index} className="bg-[#FBF9F2] text-[#4D533C] p-8 h-[200px]">

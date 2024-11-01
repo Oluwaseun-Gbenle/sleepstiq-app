@@ -30,11 +30,11 @@ const ProductReview = () => {
     };
     return (
         <div className="relative">
-            <div className="text-[36px] font-bold text-[#4D533C] mb-8 ps-36">Product Reviews</div>
-            <div className="ps-36 pb-16 product-custom-slider">
+            <div className="text-[36px] font-bold text-[#4D533C] mb-9 p-6 sm:ps-16 lg:ps-36 text-center lg:text-start">Product Reviews</div>
+            <div className="p-6 sm:ps-16 lg:ps-36 -mb-48  product-custom-slider">
                 <Slider  {...settings}>
                     {productReviews.map((productReview, index) => (
-                        <div key={index} className="bg-white text-[#4D533C]  h-[480px] rounded-lg">
+                        <div key={index} className="bg-white text-[#4D533C]  h-[460px] rounded-lg">
                             <div className="flex justify-center">
                             <Image
                                 src={productReview.imageSrc}

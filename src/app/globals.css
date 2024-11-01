@@ -24,12 +24,20 @@ body {
 margin-left: 10px;
 margin-right: 10px;
 }
+
 .product-custom-slider .slick-slide{
   margin-left: 30px;
   margin-right: 30px;
-  box-shadow: 50px 50px 100px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 50px 10px 100px 0px rgba(0, 0, 0, 0.15);
   background-color: white;
   border-radius: 8px;
+  }
+  
+  @media (max-width: 640px) {
+    .product-custom-slider .slick-slide {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
   }
 
   .number-input::-webkit-outer-spin-button,
