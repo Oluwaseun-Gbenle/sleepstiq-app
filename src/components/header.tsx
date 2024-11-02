@@ -26,7 +26,7 @@ const Header = () => {
   const links = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "", label: "Shop" },
+    { href: "/shop", label: "Shop" },
     { href: "/faqs", label: "FAQs" },
   ];
 
