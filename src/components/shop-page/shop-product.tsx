@@ -4,7 +4,7 @@ import React, { FC, useState } from "react"
 import { customerReviewsTwo } from "../data"
 import Slider from "react-slick"
 
-const AboutProduct: FC<RouterProps> = ({ router }) => {
+const ShopProduct: FC<RouterProps> = ({ router }) => {
     const [value, setValue] = useState('');
     const settings = {
         dots: false,
@@ -67,10 +67,10 @@ const AboutProduct: FC<RouterProps> = ({ router }) => {
                             <div>
                                 <div>Unit</div>
                                 <input type="number" placeholder="0" className="number-input font-semibold mt-1 border rounded-[5px] border-[#12305B] h-[33px] ps-5 py-5 pe-3 min-w-[70px]"
-                                onChange={(e)=>{  setValue(e.target.value)}}
-                                style={{
-                                    width: `${Math.max(value.length, 1) + 5}ch`
-                                  }}/>
+                                    onChange={(e) => { setValue(e.target.value) }}
+                                    style={{
+                                        width: `${Math.max(value.length, 1) + 5}ch`
+                                    }} />
                             </div>
                         </div>
                         <button onClick={() => { router.push("/shop") }} className="bg-[#FC5959] rounded-md font-semibold text-center text-white mt-8 py-4 w-[40%] text-sm font-opensans">
@@ -100,4 +100,4 @@ const AboutProduct: FC<RouterProps> = ({ router }) => {
     )
 }
 
-export default AboutProduct
+export default ShopProduct

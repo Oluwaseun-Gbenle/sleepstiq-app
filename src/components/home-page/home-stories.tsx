@@ -70,7 +70,7 @@ const HomeStories:FC<RouterProps> = ({router}) => {
                   width={8}
                   height={8}
                 />
-                <div className="border-b border-b-[#12305B] ps-2">
+                <div className="border-b border-b-[#12305B] ps-2 cursor-pointer">
                   <span className="relative -bottom-1">More know About us</span>
                 </div>
               </div>

@@ -1,24 +1,17 @@
-"use client"
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import AboutHeroSection from '@/components/about-page/about-hero-section'
-import AboutProduct from '@/components/about-page/about-product';
-import Footer from '@/components/footer';
-import Header from '@/components/header';
-import { useRouter } from 'next/navigation';
+import Footer from '@/components/footer'
+import Header from '@/components/header'
 import React from 'react'
 
 const About = () => {
-  const router = useRouter();
-
-  return (
-    <>
-      <Header />
-      <AboutHeroSection />
-      <AboutProduct router={router} />
-      <Footer />
-    </>
-  )
+    return (
+        <>
+            <Header />
+            <div className='sm:text-[36px] text-[#12305B] px-16 text-center font-bold flex items-center justify-center h-[80vh]'>
+               🚧 <br />This Page Is Currently Under Construction 
+            </div>
+            <Footer />
+        </>
+    )
 }
 
 export default About
